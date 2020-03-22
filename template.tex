@@ -1,0 +1,60 @@
+\newcommand{\DeinName}{Vorname Nachname}
+\newcommand{\TitelArbeit}{Titel der Arbeit}
+\newcommand{\Labor}{Seminar/Labor/Modul DevOps}
+\newcommand{\PrueferEins}{Prof. Dr. Erster Prüfer}
+\newcommand{\PrueferZwei}{Dipl.-Ing Zweiter Prüfer}
+\newcommand{\fachbereich}{Informatik und Mathematik}
+\newcommand{\Datum}{\today}
+
+\makeglossary
+
+
+%
+% Einbinden des Headers, hier können auch weitere Einstellungen vorgenommen werden.
+\input{source/header}
+% Beginn des Dokuments
+\begin{document}
+
+
+% Einbinden des Deckblatts, der Eidesstattlichen Erklärung und dem Abstract
+\frontmatter
+\include{source/Titelseite}
+\include{source/content/EidesstattlicheErklaerung}
+\include{source/content/Abstract}
+
+% Einbinden des Inhaltsverzeichnisses
+%\todo[inline]{Inhaltsverzeichnis-Schachtelungswerte auf Standard zurücksetzen!}
+%\setcounter{secnumdepth}{4} % Schachtelungstiefe der Nummerierung von Überschriften
+%\setcounter{tocdepth}{4} % Schachtelungstiefe des Inhaltsverzeichnisses
+\tableofcontents 
+
+%Einbinden des Hauptteils
+\mainmatter
+\include{source/content/Einleitung}
+\include{source/content/Grundlagen}
+
+%Das Fazit
+\include{source/content/Fazit}
+
+%Einbinden des Abbildungsverzeichnisses
+\backmatter
+%Liste der Tabellen
+\listoftables
+%Einbinden des Tabellenverzeichnisses
+\listoffigures
+%Einbinden des Sourcecodeverzeichnisses
+\lstlistoflistings
+
+% Quellenverzeichnis
+\phantomsection
+\addcontentsline{toc}{chapter}{Literaturverzeichnis}
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{source/bib/references.bib}
+
+
+
+% Anhang
+\appendix
+\include{source/content/Danksagung}
+\end{document}
