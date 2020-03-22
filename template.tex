@@ -14,7 +14,7 @@
 \input{source/header}
 % Beginn des Dokuments
 \begin{document}
-
+\nocite{*}
 
 % Einbinden des Deckblatts, der Eidesstattlichen Erklärung und dem Abstract
 \frontmatter
@@ -48,11 +48,9 @@
 % Quellenverzeichnis
 \phantomsection
 \addcontentsline{toc}{chapter}{Literaturverzeichnis}
-\nocite{*}
+\appendix
 \bibliographystyle{plain}
 \bibliography{source/bib/references.bib}
-
-
 
 % Anhang
 \appendix
