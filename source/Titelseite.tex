@@ -1,57 +1,51 @@
 % erste Seite (Titelseite) der Diplomarbeit mit Titel, Name usw...
 
-\newsavebox{\Prof}
-\savebox{\Prof}{Erster Prüfer }
-
-\newsavebox{\Betr}
-\savebox{\Betr}{Zweiter Prüfer }
-
-
-
 \begin{titlepage}
-%\begin{textblock}{50}(150,30)
-  %\includegraphics[height=3cm]{source/images/BO-Logo_m_Wortmarke_P10cmWebHQ}
-	%\includegraphics[height=1cm]{source/images/BO-Logo_m_Wortmarke_L10cmWebHQ}	
-%	\includegraphics[height=4cm]{source/images/BO-Logo_m_Wortmarke_P10cmWebHQ}
-%\end{textblock}
+
 \begin{center}
 
-{\large Hochschule München}\\[1mm]
-{\small University of Applied Sciences}\\
-{\small Fachbereich \fachbereich}
-\vspace{1.5cm}
+\begin{figure}[htbp]
+\begin{minipage}[t]{7cm}
+\vspace{0pt}
+\centering
+\includegraphics[height=3cm]{source/images/hmlogo}	
+\end{minipage}
+\hfill
+\begin{minipage}[t]{7cm}
+\vspace{0.6cm}
+\textcolor{hmred}{Hochschule M\"unchen \\
+University of Applied Sciences \\
+Fakult\"at f\"ur \\ \Fachbereich}
+\end{minipage}
+\end{figure}
 
-{\huge \TitelArbeit}
+\vspace{1cm}
+\textsc{\Large Seminar \Labor}\\[0.6cm]
+\textsc{\Large Modularbeit}\\[0.8cm]
 
-\vspace{2cm}
+\HRule\\[0.8cm]
+{ \huge \bfseries \TitelArbeit}\\[0.2cm]
+{ \large \UntertitelArbeit}\\[0.3cm]
+\HRule \\[1cm]
 
-{\large Bachelorarbeit / Masterarbeit}
+\begin{minipage}[t]{\textwidth}
+	\begin{itemize}[labelwidth={1em}]
+	\setlength\itemsep{-0.3em}
+	\item[\emph{Seminar:}] \Labor
+	\item[\emph{Dozent*innen:}] \Prof 
+	\item[\emph{Semester:}] \Semester
+	\item[\emph{Vorgelegt von:}] \Author
+	\item[\emph{Adresse:}] \Adresse
+	\item[\emph{E-Mail:}] \Email
+	\item[\emph{Matr.-Nr.:}] \Matrikelnummer
+	\item[\emph{Fachsemester:}] \Fachsemester
+	\item[\emph{Studiengang:}] \Studiengang
+	\end{itemize}
+\end{minipage} \\[0.9cm]
 
-\vspace{1.5cm}
+\begin{flushright}
+	M\"unchen, den \today
+\end{flushright}
 
-von\\[2mm]
-
-\textbf{\large{\DeinName}}\\
-\vspace{1.5cm}
-\Labor\\[1cm]
-
-Betreuer: \\[2mm]
-
-\usebox{\Prof \PrueferEins} \\
-\usebox{\Betr \PrueferZwei} \\
-
-\vspace{1.5cm}
-München, den \today
 \end{center}
-
-\begin{textblock}{50}(20,250)
-	\includegraphics[height=3cm]{source/images/hmlogo}	
-\end{textblock}
-
-% Zweites Bild
-%% Hier kann natürlich auch jedes andere Logo eingebunden werden! %%
-% \begin{textblock}{50}(100,250)
-  %\includegraphics[height=3cm]{source/images/hmlogo.png}
-%\end{textblock}
-
 \end{titlepage}

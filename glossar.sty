@@ -2,17 +2,17 @@
 % Erzeugt ein Glossar oder Abk"urzungsverzeichnis
 \makeglossary
 
-%  Unterdrückt Ausgabe der Seitenzahl. Um in jeder 
-%  Erklärung auf eine Seite zu verweisen, kann
+%  UnterdrÃ¼ckt Ausgabe der Seitenzahl. Um in jeder 
+%  ErklÃ¤rung auf eine Seite zu verweisen, kann
 %  definiert werden:
 %  \newcommand{\glspage}[1]{ (Seite~#1)}
 \newcommand{\glspage}[1]{}
 
-%  \glentry{Stichwort}{Erklärungstext}
+%  \glentry{Stichwort}{ErklÃ¤rungstext}
 \newcommand{\glentry}[2]
   {\glossary{#1@[#1] #2|glspage}}
  
-%  Schließt den Buchstaben vor neuer Gruppe ein
+%  SchlieÃŸt den Buchstaben vor neuer Gruppe ein
 \newcommand{\glsgroup}[1]
    {{\item[] \textbf{\Large #1}}}
 

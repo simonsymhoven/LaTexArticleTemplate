@@ -1,30 +1,37 @@
-\newcommand{\DeinName}{Vorname Nachname}
-\newcommand{\TitelArbeit}{Titel der Arbeit}
-\newcommand{\Labor}{Seminar/Labor/Modul DevOps}
-\newcommand{\PrueferEins}{Prof. Dr. Erster Prüfer}
-\newcommand{\PrueferZwei}{Dipl.-Ing Zweiter Prüfer}
-\newcommand{\fachbereich}{Informatik und Mathematik}
+\newcommand{\Author}{Simon Symhoven}
+\newcommand{\Adresse}{Boschetsriederstra\ss{}e 59a, D-81379 M\"unchen}
+\newcommand{\Email}{simon.symhoven@hm.edu}
+\newcommand{\Matrikelnummer}{49651418}
+\newcommand{\Fachsemester}{5}
+\newcommand{\Studiengang}{Wirtschaftsinformatik}
+\newcommand{\TitelArbeit}{Einfluss von Kapitalstr\"omen auf die Rendite-Performance}
+\newcommand{\UntertitelArbeit}{Geldgewichtet versus Zeitgewichtet}
+\newcommand{\Labor}{Finanzm\"arkte}
+\newcommand{\Prof}{Prof. Dr. Holger Fink}
+\newcommand{\Semester}{WiSe 2020/2021}
+\newcommand{\Fachbereich}{Informatik und Mathematik}
 \newcommand{\Datum}{\today}
+\newcommand{\HRule}{\rule{\linewidth}{0.3mm}}
 
 \makeglossary
 
 
 %
-% Einbinden des Headers, hier können auch weitere Einstellungen vorgenommen werden.
+% Einbinden des Headers, hier kÃ¶nnen auch weitere Einstellungen vorgenommen werden.
 \input{source/header}
 % Beginn des Dokuments
 \begin{document}
 \nocite{*}
 
-% Einbinden des Deckblatts, der Eidesstattlichen Erklärung und dem Abstract
+% Einbinden des Deckblatts, der Eidesstattlichen ErklÃ¤rung und dem Abstract
 \frontmatter
 \include{source/Titelseite}
 \include{source/content/EidesstattlicheErklaerung}
-\include{source/content/Abstract}
+%\include{source/content/Abstract}
 
 % Einbinden des Inhaltsverzeichnisses
-%\todo[inline]{Inhaltsverzeichnis-Schachtelungswerte auf Standard zurücksetzen!}
-%\setcounter{secnumdepth}{4} % Schachtelungstiefe der Nummerierung von Überschriften
+%\todo[inline]{Inhaltsverzeichnis-Schachtelungswerte auf Standard zurÃ¼cksetzen!}
+%\setcounter{secnumdepth}{4} % Schachtelungstiefe der Nummerierung von Ãœberschriften
 %\setcounter{tocdepth}{4} % Schachtelungstiefe des Inhaltsverzeichnisses
 \tableofcontents 
 
@@ -32,8 +39,6 @@
 \mainmatter
 \include{source/content/Einleitung}
 \include{source/content/Grundlagen}
-
-%Das Fazit
 \include{source/content/Fazit}
 
 %Einbinden des Abbildungsverzeichnisses
@@ -53,6 +58,6 @@
 \bibliography{source/bib/references.bib}
 
 % Anhang
-\appendix
-\include{source/content/Danksagung}
+%\appendix
+%\include{source/content/Danksagung}
 \end{document}
